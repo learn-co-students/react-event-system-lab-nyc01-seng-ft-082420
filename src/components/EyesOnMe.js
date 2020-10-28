@@ -8,7 +8,7 @@ class EyesOnMe extends Component {
   }
 
   handleFocus = (e) => {
-    console.log('Good')
+    console.log('Good!')
   }
 
   render () {
