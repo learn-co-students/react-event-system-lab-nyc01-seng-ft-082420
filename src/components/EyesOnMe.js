@@ -3,12 +3,17 @@ import React, { Component } from 'react';
 
 class EyesOnMe extends Component {
 
-//   HandleKeyUp = (e) => {
-//     console.log('Entering password...')
-//   }
+  handleBlur = (e) => {
+    console.log('Hey! Eyes on me!')
+  }
+
+  handleFocus = (e) => {
+    console.log('Good')
+  }
+
   render () {
     return (
-      <div></div>
+      <button onFocus={this.handleFocus} onBlur={this.handleBlur} >Button</button>
     )
   }
   }
